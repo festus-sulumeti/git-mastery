@@ -7,7 +7,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f6f8fa; /* Light background for contrast */
-    color: #333; /* Dark text color */
+    color: #111; /* Dark text color */
     line-height: 1.6; /* Increased line height for readability */
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background-color: #24292e; /* Dark header background */
+    background-color: #111; /* Dark header background */
     padding: 15px 20px; /* Add some horizontal padding */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
@@ -94,7 +94,7 @@ p {
 }
 
 footer {
-    background-color: #24292e; /* Footer background color */
+    background-color: #111; /* Footer background color */
     color: #ffffff; /* Footer text color */
     text-align: center; /* Center footer text */
     padding: 15px 0; /* Vertical padding */

@@ -172,7 +172,7 @@ Dropdown menu
         display: none; /* Hide the nav links initially */
         flex-direction: column; /* Stack links vertically for dropdown */
         position: absolute;
-        background-color: #24292e;
+        background-color: #111;
         top: 50px;
         left: 0;
         width: 100%;

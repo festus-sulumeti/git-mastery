@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide section</title>
+    <title>Guide Section</title>
+    <link rel="stylesheet" href="../style/guide.css"> <!-- Link to your external stylesheet -->
 </head>
 <body>
-    festsi
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Guide</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Main content area -->
+    <div id="main">
+        <!-- Button to open sidebar -->
+        <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+        <div class="content">
+            <h1>Welcome to the Guide Section</h1>
+            <p>This is your main content area.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for toggling sidebar -->
+    <script>
+        function openNav() {
+            document.getElementById("sidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
 </body>
 </html>
