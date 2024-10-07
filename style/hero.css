@@ -1,0 +1,90 @@
+/* Styles for the hero section */
+.hero-section {
+    background-color: #1c1c1e; /* Dark background for the hero */
+    color: #f1f1f1; /* Light text color */
+    padding: 100px 0; /* Vertical padding */
+    text-align: center; /* Center-align content */
+}
+
+.hero-section h1 {
+    font-size: 3rem; /* Emphasize the title */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.hero-section p {
+    font-size: 1.4rem; /* Larger font for readability */
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto 30px; /* Center paragraph and add margin below */
+    line-height: 1.8; /* Add line spacing */
+}
+
+.features {
+    background-color: #f6f8fa; /* Light section background */
+    padding: 80px 0; /* Add vertical padding */
+    text-align: center; /* Center text */
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap; /* Make features responsive */
+    justify-content: space-around; /* Distribute space between features */
+    gap: 20px; /* Space between feature cards */
+}
+
+.feature {
+    background-color: #ffffff; /* White background for feature card */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 30px; /* Padding inside feature cards */
+    max-width: 300px; /* Limit card width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Add subtle shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.feature h3 {
+    color: #111; /* Dark heading color */
+    margin-bottom: 15px; /* Space below heading */
+}
+
+.feature p {
+    color: #666; /* Gray text for feature description */
+    font-size: 1.1rem; /* Slightly smaller font */
+}
+
+.feature:hover {
+    transform: scale(1.05); /* Grow feature card slightly on hover */
+}
+
+.explore-git {
+    background-color: #111; /* Dark background */
+    color: #fff; /* Light text */
+    padding: 80px 0; /* Vertical padding */
+    text-align: center; /* Center-align text */
+}
+
+.explore-git h2 {
+    font-size: 2.5rem; /* Large heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.explore-git p {
+    max-width: 800px; /* Limit paragraph width */
+    margin: 0 auto 30px; /* Center-align paragraph */
+    font-size: 1.2rem; /* Larger font size */
+    line-height: 1.7; /* Increase line height */
+}
+
+.explore-btn {
+    background-color: #ffcc00; /* Highlight button color */
+    color: #111; /* Dark text */
+    padding: 12px 24px; /* Button padding */
+    font-size: 1.1rem; /* Button text size */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.explore-btn:hover {
+    background-color: #ff9900; /* Darker shade on hover */
+}
