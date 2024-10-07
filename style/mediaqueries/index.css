@@ -122,16 +122,6 @@ Dropdown menu
     position: relative; /* Set position relative for the dropdown */
 }
 
-.dropdown-toggle {
-    display: none; /* Hide the button on larger screens */
-    background-color: #007bff; /* Button background color */
-    color: #ffffff; /* Button text color */
-    border: none; /* Remove default border */
-    padding: 10px 20px; /* Button padding */
-    border-radius: 4px; /* Rounded corners */
-    cursor: pointer; /* Change cursor on hover */
-    margin-left: auto; /* Space from the left */
-}
 
 /* Style for the navigation links */
 .nav-links {
