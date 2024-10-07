@@ -147,31 +147,10 @@ Dropdown menu
     color: #ffcc00; /* Highlight color on hover */
 }
 
-
-
-/* Media query for smaller devices */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Hide nav links by default on small screens */
-        flex-direction: column; /* Stack links vertically */
-        position: absolute; /* Position dropdown relative to navbar */
-        background-color: #24292e; /* Match navbar background */
-        top: 50px; /* Position below navbar */
-        left: 0; /* Align to the left */
-        width: 100%; /* Full width */
-        z-index: 10; /* Ensure it appears above other elements */
-    }
-
-    .nav-links.show {
-        display: flex; /* Show links when dropdown is active */
-    }
-
-    .dropdown-toggle {
-        display: block; /* Show button on smaller screens */
-    }
-}
+/* Base styles (for larger screens) */
 
 .dropdown-toggle {
+    display: none; /* Hide the dropdown button by default */
     background-color: #007bff; /* Button background color */
     color: #ffffff; /* Button text color */
     border: none; /* Remove default border */
@@ -183,23 +162,31 @@ Dropdown menu
     margin-left: auto; /* Align button to the right */
 }
 
-/*changes*/
+/* Show dropdown button only on small devices */
+@media (max-width: 768px) {
+    .dropdown-toggle {
+        display: block; /* Show the dropdown button */
+    }
 
-/* Button hover effect */
-.dropdown-toggle:hover {
-    background-color: #0056b3; /* Darker background on hover */
-    transform: translateY(-2px); /* Lift effect on hover */
+    .nav-links {
+        display: none; /* Hide the nav links initially */
+        flex-direction: column; /* Stack links vertically for dropdown */
+        position: absolute;
+        background-color: #24292e;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show the nav links when the dropdown is activated */
+    }
 }
 
-/* Button active effect */
-.dropdown-toggle:active {
-    transform: translateY(1px); /* Slight press effect on click */
+/* Ensure nav links are always visible on larger screens */
+@media (min-width: 769px) {
+    .nav-links {
+        display: flex; /* Show the nav links horizontally */
+    }
 }
-
-/* Button focus effect */
-.dropdown-toggle:focus {
-    outline: none; /* Remove default focus outline */
-    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Add focus shadow */
-}
-
-
