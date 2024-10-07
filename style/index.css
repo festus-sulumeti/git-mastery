@@ -26,14 +26,13 @@ header {
 
 .navbar {
     display: flex; /* Use flexbox for layout */
-    justify-content: flex-end; /* Align items to the right */
+    justify-content: space-between; /* Distribute space between items */
     align-items: center; /* Center items vertically */
-    margin-left: auto; /* Center align by taking all available space on the left */
 }
 
 .spacercontainer {
     display: flex; /* Use flexbox for spacing */
-    margin-left: auto; /* Add margin to the left to keep it aligned */
+    align-items: center; /* Center items vertically within the container */
 }
 
 .nav-links {
@@ -54,6 +53,12 @@ header {
 
 .nav-links a:hover {
     color: #ffcc00; /* Highlight color on hover */
+}
+
+.logo {
+    margin-left: 20px; /* Space between nav links and logo */
+    width: 50px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
 
 main {
