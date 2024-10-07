@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f6f8fa; /* Light background for contrast */
+    color: #333; /* Dark text color */
+    line-height: 1.6; /* Increased line height for readability */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; /* Constrain width for larger screens */
+    margin: auto; /* Center the container */
+    padding: 20px; /* Add padding for spacing */
+}
+
+header {
+    background-color: #24292e; /* Dark header background */
+    padding: 15px 20px; /* Add some horizontal padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center items vertically */
+    margin-left: auto; /* Center align by taking all available space on the left */
+}
+
+.spacercontainer {
+    display: flex; /* Use flexbox for spacing */
+    margin-left: auto; /* Add margin to the left to keep it aligned */
+}
+
+.nav-links {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Use flexbox for horizontal alignment */
+}
+
+.nav-links li {
+    margin-left: 20px; /* Space between navigation items */
+}
+
+.nav-links a {
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+main {
+    text-align: center; /* Center text in the main section */
+    padding: 50px 0; /* Vertical padding */
+}
+
+h1 {
+    margin-bottom: 20px; /* Space below heading */
+    font-size: 2.5rem; /* Larger font size for emphasis */
+}
+
+p {
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto 20px; /* Center paragraph and add margin below */
+    font-size: 1.2rem; /* Slightly larger font for clarity */
+}
+
+.btn {
+    background-color: #007bff; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 1rem; /* Button text size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+footer {
+    background-color: #24292e; /* Footer background color */
+    color: #ffffff; /* Footer text color */
+    text-align: center; /* Center footer text */
+    padding: 15px 0; /* Vertical padding */
+    position: relative; /* Position relative for stacking */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Full width */
+}
