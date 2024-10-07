@@ -111,3 +111,40 @@
         font-size: 1.1rem; /* Slightly larger nav links */
     }
 }
+
+/* Add this CSS to your existing styles */
+.navbar {
+    position: relative; /* Set position relative for the dropdown */
+}
+
+.dropdown-toggle {
+    display: none; /* Hide the button on larger screens */
+    background-color: #007bff; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 10px; /* Button padding */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide nav links by default on small screens */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute; /* Position dropdown relative to navbar */
+        background-color: #24292e; /* Match navbar background */
+        top: 50px; /* Position below navbar */
+        left: 0; /* Align to the left */
+        width: 100%; /* Full width */
+        z-index: 10; /* Ensure it appears above other elements */
+    }
+
+    .nav-links.show {
+        display: flex; /* Show links when dropdown is active */
+    }
+
+    .dropdown-toggle {
+        display: block; /* Show button on smaller screens */
+    }
+}
