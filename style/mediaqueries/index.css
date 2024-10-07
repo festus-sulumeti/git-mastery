@@ -112,7 +112,12 @@
     }
 }
 
+/*
+Dropdown menu
+*/
+
 /* Add this CSS to your existing styles */
+
 .navbar {
     position: relative; /* Set position relative for the dropdown */
 }
@@ -122,9 +127,59 @@
     background-color: #007bff; /* Button background color */
     color: #ffffff; /* Button text color */
     border: none; /* Remove default border */
-    padding: 10px; /* Button padding */
+    padding: 10px 20px; /* Button padding */
     border-radius: 4px; /* Rounded corners */
     cursor: pointer; /* Change cursor on hover */
+    margin-left: auto; /* Space from the left */
+}
+
+/* Style for the navigation links */
+.nav-links {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Use flexbox for horizontal alignment */
+    margin-left: auto; /* Align to the right */
+}
+
+.nav-links li {
+    position: relative; /* Set position relative for dropdown */
+    margin-left: 20px; /* Space between navigation items */
+}
+
+.nav-links a {
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    padding: 10px; /* Padding for links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+/* Dropdown menu styles */
+.dropdown-content {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position dropdown */
+    background-color: #24292e; /* Match navbar background */
+    min-width: 160px; /* Minimum width of dropdown */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    z-index: 1; /* Ensure it appears above other elements */
+}
+
+.nav-links li:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+    color: white; /* White text for dropdown links */
+    padding: 12px 16px; /* Padding for dropdown links */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Block display for links */
+}
+
+.dropdown-content a:hover {
+    background-color: #575757; /* Highlight color on hover */
 }
 
 /* Media query for smaller devices */
@@ -148,3 +203,4 @@
         display: block; /* Show button on smaller screens */
     }
 }
+
