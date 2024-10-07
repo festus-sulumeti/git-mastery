@@ -1,0 +1,113 @@
+/* Base Styles */
+/* Add your existing CSS here */
+
+/* Extra Small Devices (Mobile Phones) */
+@media (max-width: 575.98px) {
+    .logo {
+        width: 40px; /* Smaller logo size */
+    }
+    
+    .nav-links li {
+        margin-left: 10px; /* Smaller margin */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Smaller heading */
+    }
+
+    p {
+        font-size: 1rem; /* Smaller paragraph */
+    }
+
+    .btn {
+        padding: 8px 16px; /* Smaller button padding */
+        font-size: 0.9rem; /* Smaller button text */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .logo {
+        width: 45px; /* Slightly larger logo */
+    }
+
+    .nav-links li {
+        margin-left: 15px; /* Moderate margin */
+    }
+
+    h1 {
+        font-size: 2rem; /* Moderate heading size */
+    }
+
+    p {
+        font-size: 1.1rem; /* Moderate paragraph size */
+    }
+
+    .btn {
+        padding: 9px 18px; /* Moderate button padding */
+        font-size: 0.95rem; /* Moderate button text */
+    }
+}
+
+/* Medium Devices (Desktops) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .logo {
+        width: 50px; /* Default logo size */
+    }
+
+    .nav-links li {
+        margin-left: 20px; /* Default margin */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Default heading size */
+    }
+
+    p {
+        font-size: 1.2rem; /* Default paragraph size */
+    }
+
+    .btn {
+        padding: 10px 20px; /* Default button padding */
+        font-size: 1rem; /* Default button text */
+    }
+}
+
+/* Large Devices (Large Desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .logo {
+        width: 55px; /* Slightly larger logo */
+    }
+
+    h1 {
+        font-size: 2.8rem; /* Larger heading size */
+    }
+
+    .btn {
+        padding: 12px 24px; /* Larger button padding */
+    }
+}
+
+/* Extra Large Devices (4K Displays) */
+@media (min-width: 1200px) {
+    .logo {
+        width: 70px; /* Larger logo for 4K */
+    }
+
+    h1 {
+        font-size: 3rem; /* Large heading for 4K */
+    }
+
+    .btn {
+        padding: 14px 28px; /* Larger button padding for 4K */
+        font-size: 1.1rem; /* Slightly larger button text */
+    }
+
+    p {
+        font-size: 1.3rem; /* Larger paragraph for 4K */
+    }
+
+    .nav-links {
+        font-size: 1.1rem; /* Slightly larger nav links */
+    }
+}
