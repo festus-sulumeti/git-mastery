@@ -183,6 +183,8 @@ Dropdown menu
     margin-left: auto; /* Align button to the right */
 }
 
+/*changes*/
+
 /* Button hover effect */
 .dropdown-toggle:hover {
     background-color: #0056b3; /* Darker background on hover */
