@@ -5,6 +5,9 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body occupies full height */
 }
 
 /* Header styling */
@@ -13,81 +16,124 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 /* Main content styling */
 main {
     padding: 20px;
-    max-width: 800px; /* Default max width */
+    max-width: 800px;
     margin: auto;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    flex: 1; /* Allow main to grow and fill space */
 }
 
-/* Typography styles */
+/* Typography */
+h1, h2, h3 {
+    margin: 0; /* Reset margins for headings */
+}
+
 h1 {
-    font-size: 32px;
-    margin-bottom: 15px;
+    font-size: 32px; /* Larger font size */
 }
 
 h2 {
-    font-size: 26px;
-    margin-top: 25px;
-    color: #444;
+    font-size: 26px; /* Subheading font size */
 }
 
 h3 {
-    font-size: 22px;
-    margin-top: 20px;
-    color: #555;
+    font-size: 22px; /* Smaller subheading font size */
 }
 
 p {
-    line-height: 1.8;
-    margin-bottom: 20px;
+    line-height: 1.8; /* Readable line height */
+    margin-bottom: 20px; /* Spacing between paragraphs */
 }
 
 ul {
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-left: 20px; /* Indentation for list items */
 }
 
 /* Footer styling */
 footer {
     text-align: center;
     padding: 15px;
-    margin-top: 30px;
     background-color: #111;
     color: white;
 }
 
 /* Media Queries */
 
-/* For devices with a width of 600px or less */
-@media (max-width: 600px) {
+/* Extra Small devices (phones, 480px and below) */
+@media (max-width: 480px) {
+    header {
+        padding: 8px; /* Reduce padding for extra small screens */
+    }
+
     main {
-        padding: 15px; /* Adjust padding */
-        width: calc(100% - 30px); /* Full width with some margin */
-        box-shadow: none; /* Remove shadow */
-        border-radius: 0; /* Full-width look */
+        padding: 8px; /* Reduce padding for extra small screens */
+        box-shadow: none; /* Remove shadow for a simpler look */
+        border-radius: 0; /* Remove border-radius for a full-width look */
+        margin: 5px; /* Margin for full-width appearance */
     }
 
     h1 {
-        font-size: 24px; /* Smaller header size */
+        font-size: 20px; /* Smaller header size for extra small screens */
     }
 
     h2 {
-        font-size: 20px; /* Smaller subheading size */
+        font-size: 18px; /* Smaller subheading size for extra small screens */
     }
 
     h3 {
-        font-size: 18px; /* Smaller subheading size */
+        font-size: 16px; /* Smaller subheading size for extra small screens */
     }
 
     p {
-        font-size: 14px; /* Smaller text size */
+        font-size: 14px; /* Smaller text size for readability */
+    }
+
+    ul {
+        margin-left: 5px; /* Further reduce indentation */
+    }
+
+    li {
+        font-size: 14px; /* Adjust list item font size */
+    }
+
+    footer {
+        padding: 6px; /* Reduce footer padding */
+    }
+}
+
+/* Small devices (phones, 481px to 600px) */
+@media (min-width: 481px) and (max-width: 600px) {
+    header {
+        padding: 10px; /* Reduce padding for small screens */
+    }
+
+    main {
+        padding: 10px; /* Reduce padding for small screens */
+        box-shadow: none; /* Remove shadow for a simpler look */
+        border-radius: 0; /* Remove border-radius for a full-width look */
+        margin: 5px; /* Margin for full-width appearance */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller header size for small screens */
+    }
+
+    h2 {
+        font-size: 20px; /* Smaller subheading size for small screens */
+    }
+
+    h3 {
+        font-size: 18px; /* Smaller subheading size for small screens */
+    }
+
+    p {
+        font-size: 14px; /* Smaller text size for readability */
     }
 
     ul {
@@ -103,110 +149,109 @@ footer {
     }
 }
 
-/* For devices between 601px and 900px */
-@media (min-width: 601px) and (max-width: 900px) {
+/* Medium devices (tablets, 601px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    header {
+        padding: 15px; /* Moderate padding for tablets */
+    }
+
     main {
-        padding: 20px; /* Maintain padding */
-        width: calc(100% - 40px); /* Full width with a bit more margin */
+        padding: 15px; /* Moderate padding for tablets */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 4px; /* Slightly rounded corners */
     }
 
     h1 {
-        font-size: 28px; /* Slightly larger header */
+        font-size: 28px; /* Adjust header size for tablets */
     }
 
     h2 {
-        font-size: 24px; /* Slightly larger subheading */
+        font-size: 24px; /* Adjust subheading size for tablets */
     }
 
     h3 {
-        font-size: 20px; /* Slightly larger subheading */
+        font-size: 20px; /* Adjust subheading size for tablets */
     }
 
     p {
-        font-size: 16px; /* Adjusted text size */
-    }
-
-    ul {
-        margin-left: 15px; /* Moderate indentation */
+        font-size: 15px; /* Adjust paragraph size for tablets */
     }
 
     li {
-        font-size: 18px; /* Adjust list item font size */
+        font-size: 17px; /* Adjust list item font size for tablets */
     }
 
     footer {
-        padding: 12px; /* Moderate footer padding */
+        padding: 10px; /* Moderate footer padding for tablets */
     }
 }
 
-/* For devices between 901px and 1200px */
-@media (min-width: 901px) and (max-width: 1200px) {
+/* Large devices (desktops, 769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        padding: 20px; /* Default padding for desktops */
+    }
+
     main {
-        padding: 25px; /* Increase padding */
-        width: calc(100% - 50px); /* Adjust width for medium screens */
+        padding: 20px; /* Default padding for desktops */
     }
 
     h1 {
-        font-size: 30px; /* Adjusted header size */
+        font-size: 32px; /* Default header size for desktops */
     }
 
     h2 {
-        font-size: 26px; /* Adjusted subheading size */
+        font-size: 26px; /* Default subheading size for desktops */
     }
 
     h3 {
-        font-size: 22px; /* Adjusted subheading size */
+        font-size: 22px; /* Default subheading size for desktops */
     }
 
     p {
-        font-size: 18px; /* Slightly larger text size */
-    }
-
-    ul {
-        margin-left: 20px; /* Maintain indentation */
+        font-size: 16px; /* Default paragraph size for desktops */
     }
 
     li {
-        font-size: 20px; /* Adjust list item font size */
+        font-size: 18px; /* Default list item font size for desktops */
     }
 
     footer {
-        padding: 15px; /* Maintain footer padding */
+        padding: 15px; /* Default footer padding for desktops */
     }
 }
 
-/* For devices above 1200px */
-@media (min-width: 1201px) {
+/* Extra Large devices (large desktops, 1025px and above) */
+@media (min-width: 1025px) {
+    header {
+        padding: 20px; /* Default padding for large desktops */
+    }
+
     main {
-        padding: 30px; /* Increase padding for large screens */
-        width: 800px; /* Maintain max width for larger screens */
+        padding: 30px; /* Increased padding for large desktops */
     }
 
     h1 {
-        font-size: 32px; /* Maintain header size */
+        font-size: 36px; /* Larger header size for large desktops */
     }
 
     h2 {
-        font-size: 28px; /* Maintain subheading size */
+        font-size: 30px; /* Larger subheading size for large desktops */
     }
 
     h3 {
-        font-size: 24px; /* Maintain subheading size */
+        font-size: 24px; /* Larger subheading size for large desktops */
     }
 
     p {
-        font-size: 18px; /* Maintain text size */
-    }
-
-    ul {
-        margin-left: 25px; /* Maintain indentation */
+        font-size: 18px; /* Larger paragraph size for large desktops */
     }
 
     li {
-        font-size: 22px; /* Maintain list item font size */
+        font-size: 20px; /* Larger list item font size for large desktops */
     }
 
     footer {
-        padding: 20px; /* Maintain footer padding */
+        padding: 20px; /* Increased footer padding for large desktops */
     }
 }
