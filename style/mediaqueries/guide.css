@@ -1,0 +1,232 @@
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #111;
+    padding: 15px 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures navbar stays above content */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+/* Sidebar styling */
+.sidebar {
+    height: 100%; /* Full-height */
+    width: 0;
+    position: fixed;
+    top: 0; /* Now starts at the top */
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 70px; /* Pushes sidebar content down below the navbar */
+    z-index: 1500; /* Ensures sidebar is above all other content */
+}
+
+.sidebar a {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #ffcc00;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    color: white;
+}
+
+/* Sidebar open/close button */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 0;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.openbtn:hover {
+    background-color: #333;
+}
+
+/* Main content styling */
+#main {
+    padding: 20px 40px;
+    margin-top: 70px; /* To ensure main content is not hidden behind the navbar */
+    transition: 0.5s ease;
+}
+
+.content {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Media Queries */
+
+/* For mobile devices (up to 600px) */
+@media screen and (max-width: 600px) {
+    .navbar h2 {
+        font-size: 20px;
+    }
+
+    .sidebar {
+        padding-top: 60px;
+    }
+
+    .sidebar a {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    #main {
+        padding: 10px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .openbtn {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}
+
+/* For tablets and small desktops (600px to 768px) */
+@media screen and (max-width: 768px) {
+    .navbar h2 {
+        font-size: 22px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+        padding: 14px 25px;
+    }
+
+    #main {
+        padding: 15px 30px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 17px;
+    }
+
+    .openbtn {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+/* For medium devices (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar h2 {
+        font-size: 24px;
+    }
+
+    .sidebar a {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+
+    #main {
+        padding: 20px 35px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        padding: 12px 25px;
+    }
+}
+
+/* For large desktops (above 1024px) */
+@media screen and (min-width: 1024px) {
+    .navbar h2 {
+        font-size: 26px;
+    }
+
+    .sidebar {
+        width: 250px;
+    }
+
+    .sidebar a {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+
+    #main {
+        padding: 20px 40px;
+    }
+
+    .content h1 {
+        font-size: 32px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+}
