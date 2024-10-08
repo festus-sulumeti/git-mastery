@@ -79,18 +79,18 @@ p {
 }
 
 .btn {
-    background-color: #111; /* Button background color */
-    color: #ffffff; /* Button text color */
-    border: none; /* Remove default border */
-    padding: 10px 20px; /* Button padding */
-    border-radius: 4px; /* Rounded corners */
-    cursor: pointer; /* Change cursor on hover */
-    font-size: 1rem; /* Button text size */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
+    background-color: #ffcc00; /* Highlight button color */
+    color: #111; /* Dark text */
+    padding: 12px 24px; /* Button padding */
+    font-size: 1.1rem; /* Button text size */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .btn:hover {
-    background-color: #444; /* Darker shade on hover */
+    background-color: #ff9900; 
 }
 
 footer {
