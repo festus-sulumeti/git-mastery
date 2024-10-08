@@ -1,40 +1,66 @@
-/* Default styles (for larger screens) */
-header {
-    padding: 20px;
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body occupies full height */
 }
 
+/* Header styling */
+header {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main content styling */
 main {
     padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    flex: 1; /* Allow main to grow and fill space */
+}
+
+/* Typography */
+h1, h2, h3 {
+    margin: 0; /* Reset margins for headings */
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 32px; /* Larger font size */
 }
 
 h2 {
-    font-size: 26px;
+    font-size: 26px; /* Subheading font size */
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 22px; /* Smaller subheading font size */
 }
 
 p {
-    font-size: 16px; /* Base font size */
+    line-height: 1.8; /* Readable line height */
+    margin-bottom: 20px; /* Spacing between paragraphs */
 }
 
 ul {
-    margin-left: 20px;
+    margin-left: 20px; /* Indentation for list items */
 }
 
-li {
-    font-size: 18px; /* Base list item font size */
-}
-
+/* Footer styling */
 footer {
+    text-align: center;
     padding: 15px;
+    background-color: #111;
+    color: white;
 }
 
 /* Media Queries */
@@ -47,8 +73,9 @@ footer {
 
     main {
         padding: 10px; /* Reduce padding for smaller screens */
-        box-shadow: none; /* Remove shadow for simpler look */
+        box-shadow: none; /* Remove shadow for a simpler look */
         border-radius: 0; /* Remove border-radius for a full-width look */
+        margin: 5px; /* Margin for full-width appearance */
     }
 
     h1 {
@@ -64,7 +91,7 @@ footer {
     }
 
     p {
-        font-size: 14px; /* Smaller text size for readability on smaller devices */
+        font-size: 14px; /* Smaller text size for readability */
     }
 
     ul {
@@ -72,11 +99,11 @@ footer {
     }
 
     li {
-        font-size: 16px; /* Adjust list item font size for smaller screens */
+        font-size: 16px; /* Adjust list item font size */
     }
 
     footer {
-        padding: 8px; /* Reduce footer padding for smaller screens */
+        padding: 8px; /* Reduce footer padding */
     }
 }
 
