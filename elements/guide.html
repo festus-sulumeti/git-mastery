@@ -11,7 +11,7 @@
 
     <!-- Navbar (fixed at the top) -->
     <div class="navbar">
-        <h2>Git Page Guide</h2>
+        <h2 class="header1">Git Page Guide</h2>
     </div>
 
     <!-- Sidebar -->
@@ -27,10 +27,66 @@
     <div id="main">
         <!-- Button to open sidebar -->
         <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
-        <div class="content" id="dynamicContent">
+        <!-- <div class="content" id="dynamicContent">
             <h1>Welcome to the Guide Section</h1>
             <p>This is your main content area. Click on the links in the sidebar to load new content.</p>
+        </div> -->
+        <div class="content" id="dynamicContent">
+            <h1>Welcome to the Git Guide Section</h1>
+        
+            <!-- Introduction Section -->
+            <section>
+                <h2>Overview</h2>
+                <p>Welcome to the Git Guide, your comprehensive resource for understanding Git, the popular version control system. Whether you are new to Git or looking to deepen your knowledge, this guide will walk you through the key concepts, commands, and best practices that will help you manage your projects efficiently.</p>
+            </section>
+        
+            <!-- Why Git Section -->
+            <section>
+                <h2>Why Use Git?</h2>
+                <p>Git is an essential tool for modern software development and collaboration. It allows teams and individuals to track changes, collaborate seamlessly, and maintain a history of their codebase. Some of the key benefits of using Git include:</p>
+                <ul>
+                    <li><strong>Version Control:</strong> Keep a detailed history of all changes made to your project files.</li>
+                    <li><strong>Collaboration:</strong> Work simultaneously with multiple team members without conflicts.</li>
+                    <li><strong>Branching and Merging:</strong> Experiment with new features or fixes in isolated branches and merge them when ready.</li>
+                    <li><strong>Backup and Recovery:</strong> Revert to previous versions or recover lost changes with ease.</li>
+                </ul>
+            </section>
+        
+            <!-- Getting Started Section -->
+            <section>
+                <h2>Getting Started with Git</h2>
+                <p>To get started with Git, you'll need to install it on your local machine. Once installed, you can initialize a Git repository in your project directory, and begin tracking changes with a few basic commands:</p>
+                <ul>
+                    <li><code>git init</code> – Initializes a new Git repository.</li>
+                    <li><code>git add [file]</code> – Adds files to the staging area, preparing them for commit.</li>
+                    <li><code>git commit -m "message"</code> – Commits the staged files to the repository with a message describing the changes.</li>
+                    <li><code>git push</code> – Pushes your commits to a remote repository (e.g., GitHub).</li>
+                    <li><code>git pull</code> – Fetches the latest changes from the remote repository and merges them into your local copy.</li>
+                </ul>
+                <p>Each of these commands serves a unique purpose in maintaining your project's history and ensuring seamless collaboration.</p>
+            </section>
+        
+            <!-- Best Practices Section -->
+            <section>
+                <h2>Best Practices</h2>
+                <p>Following best practices in Git can make managing your projects more effective and help prevent common pitfalls. Here are some recommended practices:</p>
+                <ul>
+                    <li><strong>Commit Frequently:</strong> Make small, frequent commits that focus on a single change or feature.</li>
+                    <li><strong>Use Descriptive Messages:</strong> Always write clear and concise commit messages to explain the "what" and "why" of your changes.</li>
+                    <li><strong>Create Branches:</strong> Use branches for feature development, bug fixes, or experiments to avoid conflicts in the main branch.</li>
+                    <li><strong>Pull Before You Push:</strong> Always pull the latest changes from the remote repository before pushing your local changes.</li>
+                    <li><strong>Review Before Merging:</strong> Review your code carefully and ensure that it passes all tests before merging it into the main branch.</li>
+                </ul>
+            </section>
+        
+         
+            <!-- Closing Note -->
+            <section>
+                <h2>Start Exploring Git</h2>
+                <p>Click on the links in the sidebar to explore different topics about Git, such as why Git is important, detailed usage guides, and additional resources. Feel free to revisit this guide anytime you need to brush up on Git commands or find new tips for managing your repositories more effectively. Happy coding!</p>
+            </section>
         </div>
+        
     </div>
 
     <!-- JavaScript for toggling sidebar and loading content -->

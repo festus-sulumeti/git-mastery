@@ -18,6 +18,10 @@ header {
     text-align: center;
 }
 
+.header1 {
+    color: white;
+}
+
 /* Main content styling */
 main {
     padding: 20px;
