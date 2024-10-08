@@ -23,7 +23,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            z-index: 1000;
+            z-index: 1000; /* Ensures navbar stays above content */
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -37,15 +37,15 @@
 
         /* Sidebar styling */
         .sidebar {
-            height: 100%;
+            height: calc(100% - 70px); /* Ensures the sidebar starts below the navbar */
             width: 0;
             position: fixed;
-            top: 0;
+            top: 70px; /* Sidebar starts after the navbar */
             left: 0;
             background-color: #444;
             overflow-x: hidden;
-            padding-top: 80px; /* Added padding to avoid overlay with the navbar */
             transition: 0.5s;
+            padding-top: 20px; /* Adjusted padding for the content inside the sidebar */
         }
 
         .sidebar a {
@@ -66,6 +66,7 @@
             top: 10px;
             right: 25px;
             font-size: 36px;
+            color: white;
         }
 
         /* Sidebar open/close button */
@@ -87,7 +88,7 @@
 
         /* Main content styling */
         #main {
-            transition: margin-left 0.5s;
+            transition: margin-left 0.5s ease-in-out;
             padding: 20px 40px;
             margin-top: 70px; /* To ensure main content is not hidden behind the navbar */
         }
@@ -109,7 +110,6 @@
             line-height: 1.6;
             color: #555;
         }
-
     </style>
 </head>
 <body>
