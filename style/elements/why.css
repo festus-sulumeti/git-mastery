@@ -1,0 +1,70 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 32px; /* Increased font size for better visibility */
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 26px; /* Increased font size for better visibility */
+    margin-top: 25px; /* Increased top margin */
+    color: #444;
+}
+
+h3 {
+    font-size: 22px; /* Size for subheadings */
+    margin-top: 20px;
+    color: #555;
+}
+
+p {
+    line-height: 1.8; /* Increased line height for better readability */
+    margin-bottom: 20px; /* Increased bottom margin for spacing */
+}
+
+/* Enhanced list styling */
+ul {
+    margin-left: 20px; /* Indentation for list items */
+    margin-bottom: 20px; /* Space below the list */
+}
+
+li {
+    font-size: 18px; /* Increased font size for list items */
+    line-height: 1.6; /* Increased line height for better readability */
+    margin-bottom: 10px; /* Increased bottom margin for spacing */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px; /* Increased top margin */
+    background-color: #111;
+    color: white;
+}
