@@ -117,7 +117,7 @@
 
     <!-- Navbar (fixed at the top) -->
     <div class="navbar">
-        <h2>My Application</h2>
+        <h2>Git Page Guide</h2>
     </div>
 
     <!-- Sidebar -->
@@ -145,11 +145,14 @@
             // Open the sidebar
             document.getElementById("sidebar").style.width = "250px";  
         
-            // Ensure the main content stays in place
-            document.getElementById("main").style.marginLeft = "0";
-        
-            // Hide the open button when the sidebar is opened (only on smaller screens)
-            if (window.innerWidth <= 768) { // For screens smaller than 768px
+            
+            // Push the main content to the right by the same amount on larger screens
+            if (window.innerWidth > 768) {
+                document.getElementById("main").style.marginLeft = "250px";
+            } else {
+                // On smaller screens, keep the main content in place
+                document.getElementById("main").style.marginLeft = "0";
+                // Hide the open button when the sidebar is opened
                 document.querySelector('.openbtn').style.display = 'none';
             }
         }
@@ -157,6 +160,9 @@
         function closeNav() {
             // Close the sidebar
             document.getElementById("sidebar").style.width = "0";  
+
+            // Reset the main content's margin to its default position
+            document.getElementById("main").style.marginLeft = "0";
         
             // Show the open button when the sidebar is closed (only on smaller screens)
             if (window.innerWidth <= 768) { 
