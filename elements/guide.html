@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guide Section</title>
+    <link rel="stylesheet" href="../style/mediaqueries/guide.css">
     <style>
         /* General page styling */
         body {
@@ -141,14 +142,29 @@
     <!-- JavaScript for toggling sidebar and loading content -->
     <script>
         function openNav() {
-            document.getElementById("sidebar").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("sidebar").style.width = "0";
+            // Open the sidebar
+            document.getElementById("sidebar").style.width = "250px";  
+        
+            // Ensure the main content stays in place
             document.getElementById("main").style.marginLeft = "0";
+        
+            // Hide the open button when the sidebar is opened (only on smaller screens)
+            if (window.innerWidth <= 768) { // For screens smaller than 768px
+                document.querySelector('.openbtn').style.display = 'none';
+            }
         }
+        
+        function closeNav() {
+            // Close the sidebar
+            document.getElementById("sidebar").style.width = "0";  
+        
+            // Show the open button when the sidebar is closed (only on smaller screens)
+            if (window.innerWidth <= 768) { 
+                document.querySelector('.openbtn').style.display = 'block';
+            }
+        }
+        
+        
 
         // Function to dynamically load content into the main section
         function loadContent(page) {
@@ -170,6 +186,11 @@
                     content = '<h1>Welcome</h1><p>Welcome to the Guide Section. Please select a page from the sidebar.</p>';
             }
             document.getElementById('dynamicContent').innerHTML = content;
+
+            // Close the sidebar after a link is clicked (only on smaller screens)
+            if (window.innerWidth <= 768) { 
+                closeNav();
+            }
         }
     </script>
 </body>
