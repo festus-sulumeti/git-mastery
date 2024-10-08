@@ -29,29 +29,24 @@ function closeNav() {
 
 
 
-// Function to dynamically load content into the main section
+// Function to dynamically load content from HTML files into the main section
 function loadContent(page) {
-    var content = '';
-    switch (page) {
-        case 'home':
-            content = '<h1>Home Section</h1><p>This is the Home section content.</p>';
-            break;
-        case 'guide':
-            content = '<h1>Guide Section</h1><p>This is the Guide section content.</p>';
-            break;
-        case 'about':
-            content = '<h1>About Section</h1><p>This is the About section content.</p>';
-            break;
-        case 'contact':
-            content = '<h1>Contact Section</h1><p>This is the Contact section content.</p>';
-            break;
-        default:
-            content = '<h1>Welcome</h1><p>Welcome to the Guide Section. Please select a page from the sidebar.</p>';
-    }
-    document.getElementById('dynamicContent').innerHTML = content;
-
-    // Close the sidebar after a link is clicked (only on smaller screens)
-    if (window.innerWidth <= 768) { 
-        closeNav();
-    }
+    var filePath =  page + '.html';
+    
+    // Fetch the content from the HTML file
+    fetch(filePath)
+        .then(response => response.text())
+        .then(data => {
+            // Insert the fetched HTML content into the dynamicContent div
+            document.getElementById('dynamicContent').innerHTML = data;
+            
+            // Close the sidebar after a link is clicked (only on smaller screens)
+            if (window.innerWidth <= 768) { 
+                closeNav();
+            }
+        })
+        .catch(error => {
+            console.error('Error loading content:', error);
+            document.getElementById('dynamicContent').innerHTML = '<h1>Error</h1><p>Failed to load content.</p>';
+        });
 }
