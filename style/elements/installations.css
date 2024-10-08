@@ -1,3 +1,4 @@
+/* Default styles (Desktop view) */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 20px;
@@ -20,12 +21,16 @@ p, li {
     line-height: 1.6;
 }
 
+/* Code block styling */
 pre, code {
     background-color: #e0e0e0;
     padding: 10px;
     border-radius: 5px;
     display: block;
     margin: 10px 0;
+    overflow-x: auto;  /* Allow horizontal scrolling */
+    white-space: pre-wrap; /* Prevent code from overflowing */
+    word-wrap: break-word; /* Break long words */
 }
 
 a {
@@ -49,12 +54,89 @@ section {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
+/* Tablet view (between 768px and 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    body {
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    p, li {
+        font-size: 17px;
+    }
+
+    pre, code {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    section {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Mobile view (below 768px) */
+@media (max-width: 767px) {
     body {
         margin: 10px;
     }
 
+    h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
     p, li {
         font-size: 16px;
+    }
+
+    pre, code {
+        font-size: 13px;
+        padding: 7px;
+    }
+
+    section {
+        padding: 12px;
+        margin-bottom: 25px;
+    }
+
+    ul {
+        margin-left: 15px;
+    }
+}
+
+/* Small mobile (below 480px) */
+@media (max-width: 480px) {
+    body {
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    p, li {
+        font-size: 14px;
+    }
+
+    pre, code {
+        font-size: 12px;
+        padding: 6px;
+        overflow-x: auto;  /* Ensure horizontal scrolling on smaller screens */
+    }
+
+    section {
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        margin-left: 10px;
     }
 }
