@@ -1,0 +1,76 @@
+/* Default styles for code blocks */
+pre, code {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+    overflow-x: auto;  /* Enable horizontal scrolling */
+    white-space: pre-wrap; /* Wrap code if necessary */
+    word-wrap: break-word; /* Break long words */
+}
+
+/* Media Queries (for smaller devices) */
+@media (max-width: 768px) {
+    pre, code {
+        font-size: 14px; /* Slightly smaller font size */
+        padding: 8px;
+    }
+    
+    /* Adjust padding and margins for small devices */
+    body {
+        margin: 10px;
+    }
+    
+    h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p, li {
+        font-size: 16px;
+    }
+
+    section {
+        margin-bottom: 30px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    pre, code {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p, li {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    /* Ensure preformatted text is scrollable */
+    pre {
+        overflow-x: auto;
+        white-space: pre-wrap; /* Wrap text on small screens */
+    }
+
+    code {
+        word-wrap: break-word; /* Break long lines of code to avoid overflow */
+    }
+}
