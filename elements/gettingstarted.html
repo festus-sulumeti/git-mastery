@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Getting started</title>
+    <title>Getting Started with Git</title>
+    <link rel="stylesheet" href="../style/elements/gettingstarted.css">
+    <link rel="stylesheet" href="../style/mediaqueries/gettingstarted.css">
 </head>
 <body>
-    starting
+    <h1>Getting Started with Git</h1>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>This guide will walk you through the most essential Git commands and how to get started with Git, once installed on your local machine.</p>
+    </section>
+
+    <section id="setup">
+        <h2>1. Setting up Git</h2>
+        <p>Before you start using Git, you need to configure your identity so that your commits are tied to your name and email. This only needs to be done once per machine.</p>
+        <h3>Step 1: Configure Your Git Identity</h3>
+        <pre><code>git config --global user.name "Your Name"</code></pre>
+        <pre><code>git config --global user.email "your.email@example.com"</code></pre>
+        <p>Replace <code>"Your Name"</code> with your actual name and <code>"your.email@example.com"</code> with your email address.</p>
+        <p>Now Git knows who you are, and every commit you make will be linked to your identity!</p>
+    </section>
+
+    <section id="repository">
+        <h2>2. Starting a Repository</h2>
+
+        <h3>a. Initialize a Git Repository</h3>
+        <p>Once your identity is set up, you can start tracking changes in your project. To do this, navigate to your project folder in your terminal or command prompt and initialize Git:</p>
+        <pre><code>git init</code></pre>
+        <p>This creates a <code>.git</code> folder inside your project where Git stores the history of your changes.</p>
+
+        <h3>b. Cloning an Existing Repository</h3>
+        <p>If you want to copy an existing project from a remote repository, you can use the <code>git clone</code> command:</p>
+        <pre><code>git clone &lt;repo-url&gt;</code></pre>
+        <p>This will download all the project files along with the entire history of the project from the remote repository to your local machine.</p>
+    </section>
+
+    <section id="tracking-changes">
+        <h2>3. Tracking Changes</h2>
+
+        <h3>a. Check the Status</h3>
+        <p>To see which files have changed, which files are staged for commit, and which files are untracked, use:</p>
+        <pre><code>git status</code></pre>
+
+        <h3>b. Stage Files</h3>
+        <p>Before committing changes, you need to add the changes to the staging area. This tells Git which files you want to include in the next commit. To stage specific files:</p>
+        <pre><code>git add &lt;filename&gt;</code></pre>
+        <p>To stage all changes at once, use:</p>
+        <pre><code>git add .</code></pre>
+
+        <h3>c. Commit Changes</h3>
+        <p>Once you’ve staged the files, create a commit to record your changes with a descriptive message:</p>
+        <pre><code>git commit -m "Descriptive message of the changes"</code></pre>
+        <p>This creates a snapshot of your project at this point in time, allowing you to track your progress.</p>
+    </section>
+
+    <section id="view-history">
+        <h2>4. Viewing Commit History</h2>
+        <p>To see the history of commits in your project, use the following command:</p>
+        <pre><code>git log</code></pre>
+        <p>This will display a list of all previous commits, showing their commit IDs, author names, and commit messages.</p>
+    </section>
 </body>
 </html>
