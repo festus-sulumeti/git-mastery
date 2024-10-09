@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git commands</title>
+    <title>Comprehensive Git Commands Guide</title>
 </head>
 <body>
-    
+
+    <header>
+        <h1>Comprehensive Git Commands Guide</h1>
+    </header>
+
+    <section class="command">
+        <h2>1. git init</h2>
+        <p><strong>Initialize a new Git repository in your project directory.</strong></p>
+        <pre><code>git init</code></pre>
+        <p>This command creates a new local Git repository. You can use it to turn an existing project into a Git repository.</p>
+    </section>
+
+    <section class="command">
+        <h2>2. git clone</h2>
+        <p><strong>Clone an existing repository from a remote server.</strong></p>
+        <pre><code>git clone [url]</code></pre>
+        <p>This command copies a remote repository to your local machine, including all of the files, commits, and branches.</p>
+    </section>
+
+    <section class="command">
+        <h2>3. git status</h2>
+        <p><strong>Check the status of your working directory and staging area.</strong></p>
+        <pre><code>git status</code></pre>
+        <p>This command shows the current state of the working directory, indicating files that are staged, modified, or untracked.</p>
+    </section>
+
+    <section class="command">
+        <h2>4. git add</h2>
+        <p><strong>Add changes to the staging area.</strong></p>
+        <pre><code>git add [file]</code></pre>
+        <p>You use this command to stage changes (file modifications, additions, or deletions) for the next commit.</p>
+    </section>
+
+    <section class="command">
+        <h2>5. git commit</h2>
+        <p><strong>Commit staged changes with a descriptive message.</strong></p>
+        <pre><code>git commit -m "commit message"</code></pre>
+        <p>This saves a snapshot of your project history. Always include a descriptive commit message to explain the changes.</p>
+    </section>
+
+    <section class="command">
+        <h2>6. git push</h2>
+        <p><strong>Push committed changes to a remote repository.</strong></p>
+        <pre><code>git push [remote] [branch]</code></pre>
+        <p>This command uploads your local repository content to a remote repository, allowing others to access the changes.</p>
+    </section>
+
+    <section class="command">
+        <h2>7. git pull</h2>
+        <p><strong>Fetch and integrate changes from a remote repository.</strong></p>
+        <pre><code>git pull [remote]</code></pre>
+        <p>It combines `git fetch` and `git merge`, retrieving updates from the remote repository and merging them into your local branch.</p>
+    </section>
+
+    <section class="command">
+        <h2>8. git branch</h2>
+        <p><strong>Create, list, or delete branches in your repository.</strong></p>
+        <pre><code>git branch</code></pre>
+        <p>This command helps you manage branches. To create a new branch, use <code>git branch [branch-name]</code>. To delete, use <code>git branch -d [branch-name]</code>.</p>
+    </section>
+
+    <section class="command">
+        <h2>9. git checkout</h2>
+        <p><strong>Switch to a different branch or commit.</strong></p>
+        <pre><code>git checkout [branch-name]</code></pre>
+        <p>This command allows you to switch between different branches or even revert to a specific commit.</p>
+    </section>
+
+    <section class="command">
+        <h2>10. git merge</h2>
+        <p><strong>Merge changes from one branch into another.</strong></p>
+        <pre><code>git merge [branch]</code></pre>
+        <p>This integrates changes from another branch into the current branch.</p>
+    </section>
+
+    <section class="command">
+        <h2>11. git log</h2>
+        <p><strong>View the history of commits in the repository.</strong></p>
+        <pre><code>git log</code></pre>
+        <p>Displays a list of commits, showing the commit hash, author, date, and commit message.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Git Guide</p>
+    </footer>
+
 </body>
 </html>
