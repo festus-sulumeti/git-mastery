@@ -3,9 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git workflow</title>
+    <title>Git Workflow Guide</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <header>
+        <h1>Comprehensive Git Workflow Guide</h1>
+    </header>
+
+    <section class="workflow">
+        <h2>1. What is Git Workflow?</h2>
+        <p>The Git workflow is the structured process developers follow when using Git to manage code, collaborate, and maintain a stable codebase.</p>
+        <ul>
+            <li><strong>Separation of Concerns:</strong> Branches are used to isolate features or bug fixes.</li>
+            <li><strong>Incremental Development:</strong> Commit changes often to track progress and debug easily.</li>
+            <li><strong>Collaboration:</strong> Multiple developers work simultaneously, pushing changes to a shared remote repository.</li>
+            <li><strong>Version History:</strong> Every change is recorded and can be reverted to previous versions.</li>
+        </ul>
+    </section>
+
+    <section class="workflow">
+        <h2>2. Essential Stages of Git Workflow</h2>
+        <ul>
+            <li><strong>Working Directory:</strong> The state of your project while making changes.</li>
+            <li><strong>Staging Area:</strong> Prepare files to include in the next commit.</li>
+            <li><strong>Local Repository:</strong> Contains the entire history of your project, including commits and branches.</li>
+            <li><strong>Remote Repository:</strong> A shared location (e.g., GitHub, GitLab) for collaboration.</li>
+        </ul>
+    </section>
+
+    <section class="workflow">
+        <h2>3. Typical Git Workflow Steps</h2>
+        
+        <h3>Step 1: Modify Files</h3>
+        <p>After modifying files in the working directory, check the file status:</p>
+        <pre><code>git status</code></pre>
+        
+        <h3>Step 2: Stage Changes</h3>
+        <p>Stage changes to prepare them for a commit:</p>
+        <pre><code>git add &lt;file-name&gt;</code></pre>
+        <p>Stage all files:</p>
+        <pre><code>git add .</code></pre>
+
+        <h3>Step 3: Commit Changes</h3>
+        <p>Commit the staged changes to the local repository with a message:</p>
+        <pre><code>git commit -m "Brief description of the changes"</code></pre>
+
+        <h3>Step 4: Push Changes</h3>
+        <p>Push your commits to a remote repository:</p>
+        <pre><code>git push origin &lt;branch-name&gt;</code></pre>
+
+        <h3>Step 5: Pull Changes</h3>
+        <p>Pull changes from the remote repository to stay up-to-date:</p>
+        <pre><code>git pull origin &lt;branch-name&gt;</code></pre>
+
+        <h3>Step 6: Branching and Merging</h3>
+        <p>Create and switch branches for feature development:</p>
+        <pre><code>git branch &lt;branch-name&gt;</code></pre>
+        <pre><code>git checkout &lt;branch-name&gt;</code></pre>
+        <p>Merge a branch back into the main branch:</p>
+        <pre><code>git checkout main</code></pre>
+        <pre><code>git merge &lt;branch-name&gt;</code></pre>
+
+        <h3>Step 7: Resolve Merge Conflicts</h3>
+        <p>Resolve conflicts manually, then stage and commit:</p>
+        <pre><code>git add &lt;file-name&gt;</code></pre>
+        <pre><code>git commit</code></pre>
+    </section>
+
+    <section class="workflow">
+        <h2>4. Best Practices for Git Workflow</h2>
+        <ul>
+            <li>Commit frequently and in small increments.</li>
+            <li>Use descriptive commit messages.</li>
+            <li>Use branches for new features or bug fixes.</li>
+            <li>Pull changes regularly to avoid conflicts.</li>
+            <li>Don’t commit sensitive files (use <code>.gitignore</code>).</li>
+        </ul>
+    </section>
+
+    <section class="workflow">
+        <h2>5. Advanced Git Workflow Concepts</h2>
+        
+        <h3>Rebase vs Merge</h3>
+        <p>Merge combines the changes from one branch into another:</p>
+        <pre><code>git merge &lt;branch-name&gt;</code></pre>
+        <p>Rebase moves your commits on top of another branch:</p>
+        <pre><code>git checkout &lt;branch-name&gt;</code></pre>
+        <pre><code>git rebase main</code></pre>
+
+        <h3>Git Stash</h3>
+        <p>Temporarily store uncommitted changes:</p>
+        <pre><code>git stash</code></pre>
+        <p>Apply stashed changes:</p>
+        <pre><code>git stash apply</code></pre>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Git Workflow Guide</p>
+    </footer>
+
 </body>
 </html>
