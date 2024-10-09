@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprehensive Git Commands Guide</title>
+    
 </head>
 <body>
 
@@ -36,14 +37,14 @@
         <h2>4. git add</h2>
         <p><strong>Add changes to the staging area.</strong></p>
         <pre><code>git add [file]</code></pre>
-        <p>You use this command to stage changes (file modifications, additions, or deletions) for the next commit.</p>
+        <p>This command stages changes (file modifications, additions, or deletions) for the next commit. Use <code>git add .</code> to stage all files.</p>
     </section>
 
     <section class="command">
         <h2>5. git commit</h2>
         <p><strong>Commit staged changes with a descriptive message.</strong></p>
         <pre><code>git commit -m "commit message"</code></pre>
-        <p>This saves a snapshot of your project history. Always include a descriptive commit message to explain the changes.</p>
+        <p>This command saves a snapshot of your project history. Always include a descriptive commit message to explain the changes.</p>
     </section>
 
     <section class="command">
@@ -57,7 +58,7 @@
         <h2>7. git pull</h2>
         <p><strong>Fetch and integrate changes from a remote repository.</strong></p>
         <pre><code>git pull [remote]</code></pre>
-        <p>It combines `git fetch` and `git merge`, retrieving updates from the remote repository and merging them into your local branch.</p>
+        <p>This command retrieves updates from the remote repository and merges them into your local branch.</p>
     </section>
 
     <section class="command">
@@ -78,14 +79,42 @@
         <h2>10. git merge</h2>
         <p><strong>Merge changes from one branch into another.</strong></p>
         <pre><code>git merge [branch]</code></pre>
-        <p>This integrates changes from another branch into the current branch.</p>
+        <p>This command integrates changes from another branch into the current branch.</p>
     </section>
 
     <section class="command">
         <h2>11. git log</h2>
         <p><strong>View the history of commits in the repository.</strong></p>
         <pre><code>git log</code></pre>
-        <p>Displays a list of commits, showing the commit hash, author, date, and commit message.</p>
+        <p>This command displays a list of commits, showing the commit hash, author, date, and commit message.</p>
+    </section>
+
+    <section class="command">
+        <h2>12. git reset</h2>
+        <p><strong>Undo changes in the working directory or staging area.</strong></p>
+        <pre><code>git reset [file]</code></pre>
+        <p>This command removes files from the staging area, effectively undoing the last <code>git add</code>.</p>
+    </section>
+
+    <section class="command">
+        <h2>13. git stash</h2>
+        <p><strong>Temporarily save changes that you don’t want to commit right away.</strong></p>
+        <pre><code>git stash</code></pre>
+        <p>This command saves your changes in a “stash” and restores a clean working directory. You can apply the changes later using <code>git stash apply</code>.</p>
+    </section>
+
+    <section class="command">
+        <h2>14. git remote</h2>
+        <p><strong>Manage your remote repository connections.</strong></p>
+        <pre><code>git remote -v</code></pre>
+        <p>This command displays the remote connections. To add a new remote, use <code>git remote add [name] [url]</code>.</p>
+    </section>
+
+    <section class="command">
+        <h2>15. git diff</h2>
+        <p><strong>Show changes between commits, branches, or your working directory.</strong></p>
+        <pre><code>git diff</code></pre>
+        <p>This command shows differences between the working directory and the staging area. It is useful for reviewing changes before committing.</p>
     </section>
 
     <footer>
